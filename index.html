@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M5 - Tehnologie și Performanță Absolută</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font adus pentru un aspect premium, tehnic -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Antetul și Navigarea Globală -->
+    <header class="global-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="brand-neon">BMW</span> <span class="m-badge">M5</span>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#home" class="nav-link active" onclick="switchPage('home')">Acasă</a></li>
+                    <li><a href="#modele" class="nav-link" onclick="switchPage('modele')">Modele & Detalii</a></li>
+                    <li><a href="#tehnologie" class="nav-link" onclick="switchPage('tehnologie')">Inovație M</a></li>
+                    <li><a href="#specificatii" class="nav-link" onclick="switchPage('specificatii')">Date Tehnice</a></li>
+                </ul>
+            </nav>
+            <div class="cta-header">
+                <a href="#specificatii" class="neon-btn-sm" onclick="switchPage('specificatii')">Configurator</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTAINERUL PRINCIPAL PENTRU PAGINI DINAMICE -->
+    <main class="content-wrapper">
+
+        <!-- PAGINA 1: ACASĂ (HOME) -->
+        <section id="page-home" class="page-section active">
+            <div class="hero-zone">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h2 class="hero-subtext">Vârf de Gamă. Inginerie Germană.</h2>
+                    <h1 class="hero-title">NOUL BMW M5</h1>
+                    <p class="hero-description">
+                        Experimentează simbioza perfectă între luxul suprem și dinamica electrizantă a circuitelor de curse. Propulsia hibridă M Hybrid redefinește limitele performanței stradale.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#modele" class="neon-btn-lg" onclick="switchPage('modele')">Explorează Modelul</a>
+                        <a href="#tehnologie" class="ghost-btn" onclick="switchPage('tehnologie')">Sistemul de Propulsie</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secțiune rapidă de evidențe -->
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <h3>727 CP</h3>
+                    <p>Putere Totală Sistem</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>1000 Nm</h3>
+                    <p>Cuplu Maxim Combinat</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>3.5s</h3>
+                    <p>Accelerație 0-100 km/h</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGINA 2: MODELE ȘI DETALII -->
+        <section id="page-modele" class="page-section">
+            <div class="section-container">
+                <h2 class="section-title">Gama Executivă BMW M5</h2>
+                <p class="section-subtitle">Alege arhitectura ideală pentru performanță fără compromisuri.</p>
+                
+                <div class="models-showcase">
+                    <!-- Card Model 1 -->
+                    <div class="model-detail-card">
+                        <div class="model-image-placeholder">
+                            <div class="neon-car-silhouette">BMW M5 Sedan</div>
+                        </div>
+                        <div class="model-info">
+                            <span class="tag-premium">Performanță Pură</span>
+                            <h3>BMW M5 Limuzină</h3>
+                            <p>Eleganță clasică combinată cu elemente aerodinamice agresive din fibră de carbon. Proporții perfecte pentru o prezență impunătoare pe asfalt.</p>
+                            <ul class="spec-list-short">
+                                <li><strong>Consum:</strong> 1.7 - 1.6 l/100 km (ponderat)</li>
+                                <li><strong>Sasiu:</strong> M Adaptiv cu amortizoare controlate electronic</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card Model 2 -->
+                    <div class="model-detail-card">
+                        <div class="model-image-placeholder">
+                            <div class="neon-car-silhouette touring">BMW M5 Touring</div>
+                        </div>
+                        <div class="model-info">
+                            <span class="tag-premium">Spațiu și Dinamică</span>
+                            <h3>BMW M5 Touring</h3>
+                            <p>Versatilitatea maximă întâlnește caracterul sportiv fără rețineri. Un model spațios, ideal pentru călătorii lungi executate la viteze uluitoare.</p>
+                            <ul class="spec-list-short">
+                                <li><strong>Volum Portbagaj:</strong> Până la 1,630 litri</li>
+                                <li><strong>Tracțiune:</strong> M xDrive cu diferențial activ M</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGINA 3: INOVAȚIE ȘI TEHNOLOGIE -->
+        <section id="page-tehnologie" class="page-section">
+            <div class="section-container">
+                <h2 class="section-title">Inovație M Hybrid</h2>
+                <p class="section-subtitle">Tehnologia de circuit adaptată pentru utilizarea zilnică.</p>
+
+                <div class="tech-grid">
+                    <div class="tech-box">
+                        <div class="tech-icon">⚡</div>
+                        <h3>Motorizare V8 High-Performance</h3>
+                        <p>Motorul pe benzină de 4.4 litri cu tehnologie M TwinPower Turbo dezvoltă singur 585 CP, lucrând în armonie perfectă cu motorul electric integrat direct în transmisia M Steptronic cu 8 trepte.</p>
+                    </div>
+                    <div class="tech-box">
+                        <div class="tech-icon">🌐</div>
+                        <h3>Sistem de Navigație Live Cockpit</h3>
+                        <p>BMW Curved Display combină ecranul de instrumente de 12.3" cu ecranul central de 14.9", oferind grafică specifică diviziei M, timpi de circuit și telemetrie avansată.</p>
+                    </div>
+                    <div class="tech-box">
+                        <div class="tech-icon">🛠️</div>
+                        <h3>Direcție Integrală Activă</h3>
+                        <p>Roțile spate virează ușor în sens invers celor din față la viteze mici pentru agilitate sportivă în viraje strânse, și în același sens la viteze mari pentru stabilitate maximă.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGINA 4: DATE TEHNICE ȘI CONFIGURATOR SIMPLU -->
+        <section id="page-specificatii" class="page-section">
+            <div class="section-container">
+                <h2 class="section-title">Date Tehnice & Personalizare Visuală</h2>
+                <p class="section-subtitle">Analizează performanțele brute și configurează aspectul dinamic al mașinii tale.</p>
+
+                <div class="config-layout">
+                    <!-- Tabel Tehnic -->
+                    <div class="table-wrapper">
+                        <table class="technical-table">
+                            <thead>
+                                <tr>
+                                    <th>Parametru Tehnic</th>
+                                    <th>Valoare Specificație BMW M5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Tip Motor</strong></td>
+                                    <td>V8 (Twin-Scroll Turbo) + Motor Electric synchronous</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Capacitate Cilindrică</strong></td>
+                                    <td>4,395 cm³</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Capacitate Baterie Netă</strong></td>
+                                    <td>18.6 kWh (autonomie electrică cca. 69 km)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Viteză Maximă</strong></td>
+                                    <td>250 km/h (standard) / 305 km/h (M Driver's Package)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Simulator Culori Interactiv -->
+                    <div class="interactive-simulator">
+                        <h3>Configurator Neon Accent</h3>
+                        <p>Modifică iluminarea ambientală a simulatorului digital pentru caroseria BMW:</p>
+                        
+                        <div class="visualizer-display" id="car-preview">
+                            <span id="preview-text">BMW M5 PREVIEW</span>
+                        </div>
+
+                        <div class="control-panel">
+                            <button class="color-btn blue-neon-btn" onclick="changeAccent('#00d2ff', 'Blue Shadow Neon')">Blue Neon</button>
+                            <button class="color-btn cyber-neon-btn" onclick="changeAccent('#00ffaa', 'Cyber Green Neon')">Cyber Green</button>
+                            <button class="color-btn dark-btn" onclick="changeAccent('#111318', 'Total Black Metallic')">Total Black</button>
+                        </div>
+                        <div class="status-config">
+                            Stil Selectat: <span id="config-status-label" class="highlight-text">Blue Shadow Neon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Subsol Global (Footer) -->
+    <footer class="global-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Proiect Web Executat. Toate drepturile rezervate brandului BMW.</p>
+            <p>Dezvoltat în scop didactic utilizând standarde avansate HTML5, CSS3 și JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
